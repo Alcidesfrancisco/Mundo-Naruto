@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MundoNaruto", "MundoNaruro\MundoNaruto.csproj", "{B14EDB49-8E14-4BD0-98FF-C9F13ABBB64D}"
+EndProject
+Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "modelagem", "modelagem\modelagem.modelproj", "{3390D5D0-5645-47C9-B76E-069E6972EF8F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B14EDB49-8E14-4BD0-98FF-C9F13ABBB64D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B14EDB49-8E14-4BD0-98FF-C9F13ABBB64D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B14EDB49-8E14-4BD0-98FF-C9F13ABBB64D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B14EDB49-8E14-4BD0-98FF-C9F13ABBB64D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3390D5D0-5645-47C9-B76E-069E6972EF8F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3390D5D0-5645-47C9-B76E-069E6972EF8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3390D5D0-5645-47C9-B76E-069E6972EF8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3390D5D0-5645-47C9-B76E-069E6972EF8F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

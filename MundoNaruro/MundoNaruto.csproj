@@ -1,0 +1,599 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B14EDB49-8E14-4BD0-98FF-C9F13ABBB64D}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MundoNaruro</RootNamespace>
+    <AssemblyName>MundoNaruro</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AcessoMundo.aspx" />
+    <Content Include="Acessorios.aspx" />
+    <Content Include="App_Data\NarutoBanco.mdf" />
+    <Content Include="App_Data\NarutoBanco_log.ldf">
+      <DependentUpon>NarutoBanco.mdf</DependentUpon>
+    </Content>
+    <Content Include="bonecos.aspx" />
+    <Content Include="Bones.aspx" />
+    <Content Include="Cadastro.aspx" />
+    <Content Include="dvds.aspx" />
+    <Content Include="Episodios.aspx" />
+    <Content Include="Equipe.aspx" />
+    <Content Include="FaArts.aspx" />
+    <Content Include="FancyZoom 1.1\images-global\zoom\closebox.png" />
+    <Content Include="FancyZoom 1.1\images-global\zoom\spacer.gif" />
+    <Content Include="FancyZoom 1.1\images-global\zoom\zoom-caption-fill.png" />
+    <Content Include="FancyZoom 1.1\images-global\zoom\zoom-caption-l.png" />
+    <Content Include="FancyZoom 1.1\images-global\zoom\zoom-caption-r.png" />
+    <Content Include="FancyZoom 1.1\images-global\zoom\zoom-shadow1.png" />
+    <Content Include="FancyZoom 1.1\images-global\zoom\zoom-shadow2.png" />
+    <Content Include="FancyZoom 1.1\images-global\zoom\zoom-shadow3.png" />
+    <Content Include="FancyZoom 1.1\images-global\zoom\zoom-shadow4.png" />
+    <Content Include="FancyZoom 1.1\images-global\zoom\zoom-shadow5.png" />
+    <Content Include="FancyZoom 1.1\images-global\zoom\zoom-shadow6.png" />
+    <Content Include="FancyZoom 1.1\images-global\zoom\zoom-shadow7.png" />
+    <Content Include="FancyZoom 1.1\images-global\zoom\zoom-shadow8.png" />
+    <Content Include="FancyZoom 1.1\images-global\zoom\zoom-spin-1.png" />
+    <Content Include="FancyZoom 1.1\images-global\zoom\zoom-spin-10.png" />
+    <Content Include="FancyZoom 1.1\images-global\zoom\zoom-spin-11.png" />
+    <Content Include="FancyZoom 1.1\images-global\zoom\zoom-spin-12.png" />
+    <Content Include="FancyZoom 1.1\images-global\zoom\zoom-spin-2.png" />
+    <Content Include="FancyZoom 1.1\images-global\zoom\zoom-spin-3.png" />
+    <Content Include="FancyZoom 1.1\images-global\zoom\zoom-spin-4.png" />
+    <Content Include="FancyZoom 1.1\images-global\zoom\zoom-spin-5.png" />
+    <Content Include="FancyZoom 1.1\images-global\zoom\zoom-spin-6.png" />
+    <Content Include="FancyZoom 1.1\images-global\zoom\zoom-spin-7.png" />
+    <Content Include="FancyZoom 1.1\images-global\zoom\zoom-spin-8.png" />
+    <Content Include="FancyZoom 1.1\images-global\zoom\zoom-spin-9.png" />
+    <Content Include="FancyZoom 1.1\js-global\FancyZoom.js" />
+    <Content Include="FancyZoom 1.1\js-global\FancyZoomHTML.js" />
+    <Content Include="Filmes.aspx" />
+    <Content Include="forum.aspx" />
+    <Content Include="fotos\Bonecos\4__44416_zoom.jpg" />
+    <Content Include="fotos\Bonecos\6__41097_zoom.jpg" />
+    <Content Include="fotos\Bonecos\7__55181_zoom.jpg" />
+    <Content Include="fotos\Bonecos\bonecosnaruto01.jpg" />
+    <Content Include="fotos\Bonecos\bonecosnaruto02.jpg" />
+    <Content Include="fotos\Bonecos\bonecosnaruto03.jpg" />
+    <Content Include="fotos\Bonecos\bonecosnaruto05.jpg" />
+    <Content Include="fotos\Bonecos\bonecosnaruto06.jpg" />
+    <Content Include="fotos\Bonecos\bonecosnaruto07.jpg" />
+    <Content Include="fotos\Bonecos\bonecosnaruto08.jpg" />
+    <Content Include="fotos\Bonecos\bonecosnaruto09.jpg" />
+    <Content Include="fotos\Bonecos\bonecosnaruto11.jpg" />
+    <Content Include="fotos\Bonecos\itachi__00922_zoom.jpg" />
+    <Content Include="fotos\Bonecos\kakashi_mini__43055_zoom.jpg" />
+    <Content Include="fotos\Bonecos\kit 4 BonecosNarutoShikamarunarutosasukeesakura,cerca de 10cm cada unidade feito em otima qualidade 55,00.jpg" />
+    <Content Include="fotos\Bonecos\Kit 6 Bonecos Naruto 12 Cm 60,00.jpg" />
+    <Content Include="fotos\Bonecos\madara__88180_zoom.jpg" />
+    <Content Include="fotos\Bonecos\NAFG1393.jpg" />
+    <Content Include="fotos\Bonecos\NAFG6041.jpg" />
+    <Content Include="fotos\Bonecos\Naruto Shippuden Toynami 15,5 Cm Naruto 85,00.jpg" />
+    <Content Include="fotos\Bonecos\naruto_sennin__04339_zoom.jpg" />
+    <Content Include="fotos\Bonecos\naruto_toad__94156_zoom.jpg" />
+    <Content Include="fotos\Bonecos\naruto__64715_zoom.jpg" />
+    <Content Include="fotos\Bonecos\R%24 29,90.jpg" />
+    <Content Include="fotos\Bonecos\sasuke__60312_zoom.jpg" />
+    <Content Include="fotos\Dvd\DVD_NARUTO_Class_4bf0195bae72d.jpg" />
+    <Content Include="fotos\Dvd\DVD_Naruto_Compl_4c94ad3f40634.jpg" />
+    <Content Include="fotos\Dvd\Naruto_Shippuude_4a3b0472c73ea.jpg" />
+    <Content Include="fotos\Dvd\Naruto_Shippuude_4acba67aa7b94.jpg" />
+    <Content Include="fotos\Dvd\Naruto_Shippuude_4b71479fcf093.jpg" />
+    <Content Include="fotos\Dvd\Naruto_Shippuude_4c94b1922a63c.jpg" />
+    <Content Include="fotos\Dvd\Naruto_Shippuude_4c94db60275ab.jpg" />
+    <Content Include="fotos\FotosAcessorios\Armas\105329362_719.jpg" />
+    <Content Include="fotos\FotosAcessorios\Armas\1216926959075_bigPhoto_1.jpg" />
+    <Content Include="fotos\FotosAcessorios\Armas\cosplay-naruto-fuma-shuriken-sasuke-metal-9-cm.jpeg" />
+    <Content Include="fotos\FotosAcessorios\Armas\F_art97_Memo2_1.jpg" />
+    <Content Include="fotos\FotosAcessorios\Armas\ist2_568447-shuriken.jpg" />
+    <Content Include="fotos\FotosAcessorios\Armas\Kunai.jpg" />
+    <Content Include="fotos\FotosAcessorios\Armas\kunai.jpg9c7e71b1-506f-46a9-b23e-1a25e4959105Larger.jpg" />
+    <Content Include="fotos\FotosAcessorios\Armas\Naruto Cosplay Accessories Yondaime Hokage Kunai  knife.jpg" />
+    <Content Include="fotos\FotosAcessorios\Armas\Naruto_Kunai_EM20905BK-2.jpg" />
+    <Content Include="fotos\FotosAcessorios\Armas\Naruto_Ninja_Kunai_Triple_Throwing_Set-SHD-W5236.jpg" />
+    <Content Include="fotos\FotosAcessorios\Armas\Shuriken-Naruto_Throwing_Star_RC-014.jpg" />
+    <Content Include="fotos\FotosAcessorios\Armas\shuriken.jpg" />
+    <Content Include="fotos\Bandana\bandana-naruto-chuva-preto~3515140 15,00.jpg" />
+    <Content Include="fotos\Bandana\Bandana.jpg" />
+    <Content Include="fotos\Bandana\de 1,20M em oxford costura dupla 15,00.jpg" />
+    <Content Include="fotos\Bandana\Folha preta renegada 15,00.jpg" />
+    <Content Include="fotos\Bandana\s_MLB_v_O_f_217177904_3737 19,00.jpg" />
+    <Content Include="fotos\Bandana\s_MLB_v_O_f_225407445_2196.jpg" />
+    <Content Include="fotos\Bandana\s_MLB_v_O_f_225407445_4802.jpg" />
+    <Content Include="fotos\Bandana\s_MLB_v_O_f_225407445_7724.jpg" />
+    <Content Include="fotos\Bandana\s_MLB_v_O_f_225407445_7763.jpg" />
+    <Content Include="fotos\Bandana\s_MLB_v_O_f_225407445_9420.jpg" />
+    <Content Include="fotos\FotosBones\bonecosnaruto01.jpg" />
+    <Content Include="fotos\FotosBones\Boné Naruto Cosplay %28preto%29.jpg" />
+    <Content Include="fotos\FotosBones\chapeu_de_sakura-p148236144862471701envw3_400.jpg" />
+    <Content Include="fotos\FotosBones\designall_003.jpg" />
+    <Content Include="fotos\FotosBones\foto_BAA657C9-CDAC-9BE7-476C62C23BA19101.jpg" />
+    <Content Include="fotos\FotosBones\katakana_de_naruto_chapeu-p148975608148195314enxqz_400.jpg" />
+    <Content Include="fotos\FotosBones\naruto-hat-naht3757-700x700.jpg" />
+    <Content Include="fotos\FotosBones\s_MLB_v_O_f_214309521_5954.jpg" />
+    <Content Include="fotos\FotosCamisas\1.png" />
+    <Content Include="fotos\FotosCamisas\740d0a0aeb1b2938ded82ec2495b0a52.jpg" />
+    <Content Include="fotos\FotosCamisas\babylook_naruto_06_branca_costas.jpg" />
+    <Content Include="fotos\FotosCamisas\babylook_naruto_06_branca_frente.jpg" />
+    <Content Include="fotos\FotosCamisas\Camisa Naruto - Akatsuki C Nuvens nas Mangas.jpg" />
+    <Content Include="fotos\FotosCamisas\camisa-naruto-kyubi.jpg" />
+    <Content Include="fotos\FotosCamisas\camiseta_naruto_01_5.jpg" />
+    <Content Include="fotos\FotosCamisas\camiseta_naruto_02_azul.jpg" />
+    <Content Include="fotos\FotosCamisas\camiseta_naruto_03_preta.jpg" />
+    <Content Include="fotos\FotosCamisas\camiseta_naruto_04_branca_costas_1.jpg" />
+    <Content Include="fotos\FotosCamisas\camiseta_naruto_04_branca_frente.jpg" />
+    <Content Include="fotos\FotosCamisas\camiseta_naruto_05_branca_costas.jpg" />
+    <Content Include="fotos\FotosCamisas\camiseta_naruto_05_branca_frente.jpg" />
+    <Content Include="fotos\FotosCamisas\camiseta_naruto_07_branca_costas.jpg" />
+    <Content Include="fotos\FotosCamisas\camiseta_naruto_07_branca_frente.jpg" />
+    <Content Include="fotos\FotosCamisas\camiseta_naruto_08_branca_costas.jpg" />
+    <Content Include="fotos\FotosCamisas\camiseta_naruto_08_branca_frente.jpg" />
+    <Content Include="fotos\FotosCamisas\Camiseta_Naruto__4d76588e02402_170x170.jpg" />
+    <Content Include="fotos\FotosCamisas\designall.dll.jpg" />
+    <Content Include="fotos\FotosCamisas\fgfhg.jpg" />
+    <Content Include="fotos\FotosCamisas\fghfdh.jpg" />
+    <Content Include="fotos\FotosCamisas\foto_0_170642_ANI_09_Naruto_Lingua_Preta_Gde.jpg" />
+    <Content Include="fotos\FotosCamisas\foto_1_170642_ANI_09_Naruto_Lingua_Branca_Gde.jpg" />
+    <Content Include="fotos\FotosCamisas\fyhcghj.png" />
+    <Content Include="fotos\FotosCamisas\gaara%2520pote.jpg" />
+    <Content Include="fotos\FotosCamisas\gaara_002.jpg" />
+    <Content Include="fotos\FotosCamisas\hhgfhjd.jpg" />
+    <Content Include="fotos\FotosCamisas\img.jpg" />
+    <Content Include="fotos\FotosCamisas\kizame_002.jpg" />
+    <Content Include="fotos\FotosCamisas\Naruto Camisa.jpg" />
+    <Content Include="fotos\FotosCamisas\naruto-05.jpg" />
+    <Content Include="fotos\FotosCamisas\naruto-11_002.jpg" />
+    <Content Include="fotos\FotosCamisas\naruto-13_002.jpg" />
+    <Content Include="fotos\FotosCamisas\naruto-17_002.jpg" />
+    <Content Include="fotos\FotosCamisas\naruto-21_002.jpg" />
+    <Content Include="fotos\FotosCamisas\Naruto_Cartoon_T_Shirt_Printing_HSC110355.jpg" />
+    <Content Include="fotos\FotosCamisas\NARUTO_ras_002.jpg" />
+    <Content Include="fotos\FotosCamisas\OgAAAI701ZiAPB5f7E7NtbSKGcqmGg6ZeIMk_9QYareFnfrXjpYi_Uo5VZvPWXGTZPo6QaOB23j_-yi5ZDbgWrGs3VUAm1T1UPsMIn2j50_4GhZUi8D0siOLmYeE.jpg" />
+    <Content Include="fotos\FotosCamisas\s_MLB_v_F_f_201298963_8593.jpg" />
+    <Content Include="fotos\FotosCamisas\s_MLB_v_F_f_206835839_4177.jpg" />
+    <Content Include="fotos\FotosCamisas\s_MLB_v_F_f_206835839_9992.jpg" />
+    <Content Include="fotos\FotosCamisas\s_MLB_v_F_f_226742967_611.jpg" />
+    <Content Include="fotos\FotosCamisas\s_MLB_v_O_f_138485900_2416.jpg" />
+    <Content Include="fotos\FotosCamisas\s_MLB_v_O_f_190522508_9298.jpg" />
+    <Content Include="fotos\FotosCamisas\s_MLB_v_O_f_195220348_1088.jpg" />
+    <Content Include="fotos\FotosCamisas\s_MLB_v_O_f_207309718_6773.jpg" />
+    <Content Include="fotos\FotosCamisas\s_MLB_v_O_f_84951774_2103.jpg" />
+    <Content Include="fotos\FotosCamisas\s_MLB_v_O_f_84951774_3069.jpg" />
+    <Content Include="fotos\FotosCamisas\time%252520kakashi_002.jpg" />
+    <Content Include="fotos\FotosCamisas\vxasd.jpg" />
+    <Content Include="fotos\FotosCamisas\xzfsdf.jpg" />
+    <Content Include="fotos\FotosEquipe\Alcides.jpg" />
+    <Content Include="fotos\FotosEquipe\Edinalva.jpg" />
+    <Content Include="fotos\FotosEquipe\Karina.jpg" />
+    <Content Include="fotos\FotosEquipe\marize.jpg" />
+    <Content Include="fotos\FotosEquipe\William.jpg" />
+    <Content Include="fotos\Kunai\105329362_719.jpg" />
+    <Content Include="fotos\Kunai\F_art97_Memo2_1.jpg" />
+    <Content Include="fotos\Kunai\Kunai.jpg" />
+    <Content Include="fotos\Kunai\kunai.jpg9c7e71b1-506f-46a9-b23e-1a25e4959105Larger.jpg" />
+    <Content Include="fotos\Kunai\Naruto Cosplay Accessories Yondaime Hokage Kunai  knife.jpg" />
+    <Content Include="fotos\Kunai\Naruto_Kunai_EM20905BK-2.jpg" />
+    <Content Include="fotos\Kunai\Naruto_Ninja_Kunai_Triple_Throwing_Set-SHD-W5236.jpg" />
+    <Content Include="fotos\shuriken\1216926959075_bigPhoto_1.jpg" />
+    <Content Include="fotos\shuriken\cosplay-naruto-fuma-shuriken-sasuke-metal-9-cm.jpeg" />
+    <Content Include="fotos\shuriken\ist2_568447-shuriken.jpg" />
+    <Content Include="fotos\shuriken\Shuriken-Naruto_Throwing_Star_RC-014.jpg" />
+    <Content Include="fotos\shuriken\shuriken.jpg" />
+    <Content Include="images-global\zoom\closebox.png" />
+    <Content Include="images-global\zoom\spacer.gif" />
+    <Content Include="images-global\zoom\zoom-caption-fill.png" />
+    <Content Include="images-global\zoom\zoom-caption-l.png" />
+    <Content Include="images-global\zoom\zoom-caption-r.png" />
+    <Content Include="images-global\zoom\zoom-shadow1.png" />
+    <Content Include="images-global\zoom\zoom-shadow2.png" />
+    <Content Include="images-global\zoom\zoom-shadow3.png" />
+    <Content Include="images-global\zoom\zoom-shadow4.png" />
+    <Content Include="images-global\zoom\zoom-shadow5.png" />
+    <Content Include="images-global\zoom\zoom-shadow6.png" />
+    <Content Include="images-global\zoom\zoom-shadow7.png" />
+    <Content Include="images-global\zoom\zoom-shadow8.png" />
+    <Content Include="images-global\zoom\zoom-spin-1.png" />
+    <Content Include="images-global\zoom\zoom-spin-10.png" />
+    <Content Include="images-global\zoom\zoom-spin-11.png" />
+    <Content Include="images-global\zoom\zoom-spin-12.png" />
+    <Content Include="images-global\zoom\zoom-spin-2.png" />
+    <Content Include="images-global\zoom\zoom-spin-3.png" />
+    <Content Include="images-global\zoom\zoom-spin-4.png" />
+    <Content Include="images-global\zoom\zoom-spin-5.png" />
+    <Content Include="images-global\zoom\zoom-spin-6.png" />
+    <Content Include="images-global\zoom\zoom-spin-7.png" />
+    <Content Include="images-global\zoom\zoom-spin-8.png" />
+    <Content Include="images-global\zoom\zoom-spin-9.png" />
+    <Content Include="img\ete.PNG" />
+    <Content Include="img\FaArts\697016-20120531021610.jpg" />
+    <Content Include="img\FaArts\802015-20120601224050.jpg" />
+    <Content Include="img\FaArts\802015-20120601224937.jpg" />
+    <Content Include="img\FaArts\806206-20120603151328.jpg" />
+    <Content Include="img\FaArts\812682-20120603203302.jpg" />
+    <Content Include="img\FaArts\832934-20120603144557.jpg" />
+    <Content Include="img\FaArts\832934-20120603144701.jpg" />
+    <Content Include="img\FaArts\837230-20120603142425.jpg" />
+    <Content Include="img\facebook-like-icon.png" />
+    <Content Include="img\facebookLike.png" />
+    <Content Include="img\naruto-wallpapers-akatsuki-fight-big.jpg" />
+    <Content Include="img\narutoLogin.png" />
+    <Content Include="img\recuperarSenha.jpg" />
+    <Content Include="informaçoes.aspx" />
+    <Content Include="Intro.aspx" />
+    <Content Include="Jogos.aspx" />
+    <Content Include="js-global\FancyZoom.js" />
+    <Content Include="js-global\FancyZoomHTML.js" />
+    <Content Include="Mangas.aspx" />
+    <Content Include="Musicas.aspx" />
+    <Content Include="Ova.aspx" />
+    <Content Include="RecuperarSenha.aspx" />
+    <Content Include="Sobre.aspx" />
+    <Content Include="SpryAsset\SpryMenuBar.js" />
+    <Content Include="SpryAsset\SpryMenuBarDown.gif" />
+    <Content Include="SpryAsset\SpryMenuBarDownHover.gif" />
+    <Content Include="SpryAsset\SpryMenuBarHorizontal.css" />
+    <Content Include="SpryAsset\SpryMenuBarRight.gif" />
+    <Content Include="SpryAsset\SpryMenuBarRightHover.gif" />
+    <Content Include="SpryAsset\SpryMenuBarVertical.css" />
+    <Content Include="swf\bannerRodape.swf" />
+    <Content Include="swf\banner.swf" />
+    <Content Include="swf\banner2.swf" />
+    <Content Include="swf\madara.swf" />
+    <Content Include="swf\mundoNaruto.swf" />
+    <Content Include="swf\naruto.swf" />
+    <Content Include="Todosprodutos.aspx" />
+    <Content Include="util\CaptchaControl.aspx" />
+    <Content Include="Camisas.aspx" />
+    <Content Include="css\Estilos.css" />
+    <Content Include="css\SpryMenuBarVertical.css" />
+    <Content Include="email.aspx" />
+    <Content Include="email2.aspx" />
+    <Content Include="erroNull.aspx" />
+    <Content Include="fotos\Konoha.jpg" />
+    <Content Include="img\1184141490_f1.jpg" />
+    <Content Include="img\1475959435_0589ad63ee.jpg" />
+    <Content Include="img\1naruto-shippuden-wallpaper-4.jpg" />
+    <Content Include="img\3021007054_fbd0e2e24f.jpg" />
+    <Content Include="img\banner1.png" />
+    <Content Include="img\banner2.png" />
+    <Content Include="img\banner3.png" />
+    <Content Include="img\bg2.jpg" />
+    <Content Include="img\cadastro.jpg" />
+    <Content Include="img\cadastro2.jpg" />
+    <Content Include="img\Captura2r.PNG" />
+    <Content Include="img\Capturar.PNG" />
+    <Content Include="img\Capturar3.PNG" />
+    <Content Include="img\Capturar4.PNG" />
+    <Content Include="img\Capturar5.PNG" />
+    <Content Include="img\folha.jpg" />
+    <Content Include="img\folha2.png" />
+    <Content Include="img\hqdefault.jpg" />
+    <Content Include="img\naruto plano de fundo.jpg" />
+    <Content Include="img\naruto-shippuden.png" />
+    <Content Include="img\naruto-shippuuden-t5-cartoon.jpg" />
+    <Content Include="img\naruto914912108.jpg" />
+    <Content Include="img\narutoshippuden007.jpg" />
+    <Content Include="img\NarutoTriste.JPG" />
+    <Content Include="img\Naruto_Shippuden_61_1024x768.jpg" />
+    <Content Include="img\Naruto_Shippuden_63_1024x768.jpg" />
+    <Content Include="img\Naruto_Shippuden_64_1024x768.jpg" />
+    <Content Include="img\Naruto_Shippuden_64_1024x7682.jpg" />
+    <Content Include="img\Naruto_Shippuden_65_1024x768.jpg" />
+    <Content Include="img\Naruto_Shippuden_66_1024x768.jpg" />
+    <Content Include="img\naruto_shippuden_wallpaper_by_uglycat_145.jpg" />
+    <Content Include="img\naruto_tenten0004.jpg" />
+    <Content Include="img\pagSeguroButton.gif" />
+    <Content Include="img\sakuraEsqueceu.jpg" />
+    <Content Include="img\sasuke-naruto-shippuden.jpg" />
+    <Content Include="index.aspx" />
+    <Content Include="menu.aspx" />
+    <Content Include="css\SpryMenuBarHorizontal.css" />
+    <Content Include="WallPapers.aspx" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="WebForm1.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AcessoMundo.aspx.cs">
+      <DependentUpon>AcessoMundo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AcessoMundo.aspx.designer.cs">
+      <DependentUpon>AcessoMundo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Acessorios.aspx.cs">
+      <DependentUpon>Acessorios.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Acessorios.aspx.designer.cs">
+      <DependentUpon>Acessorios.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="bean\CategoriaBean.cs" />
+    <Compile Include="bean\EquipeBean.cs" />
+    <Compile Include="bean\NewsLetterBean.cs" />
+    <Compile Include="bean\ProdutoBean.cs" />
+    <Compile Include="bonecos.aspx.cs">
+      <DependentUpon>bonecos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="bonecos.aspx.designer.cs">
+      <DependentUpon>bonecos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Bones.aspx.cs">
+      <DependentUpon>Bones.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Bones.aspx.designer.cs">
+      <DependentUpon>Bones.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastro.aspx.cs">
+      <DependentUpon>Cadastro.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Cadastro.aspx.designer.cs">
+      <DependentUpon>Cadastro.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="dvds.aspx.cs">
+      <DependentUpon>dvds.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="dvds.aspx.designer.cs">
+      <DependentUpon>dvds.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Episodios.aspx.cs">
+      <DependentUpon>Episodios.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Episodios.aspx.designer.cs">
+      <DependentUpon>Episodios.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Equipe.aspx.cs">
+      <DependentUpon>Equipe.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Equipe.aspx.designer.cs">
+      <DependentUpon>Equipe.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FaArts.aspx.cs">
+      <DependentUpon>FaArts.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FaArts.aspx.designer.cs">
+      <DependentUpon>FaArts.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Filmes.aspx.cs">
+      <DependentUpon>Filmes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Filmes.aspx.designer.cs">
+      <DependentUpon>Filmes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="forum.aspx.cs">
+      <DependentUpon>forum.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="forum.aspx.designer.cs">
+      <DependentUpon>forum.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="informaçoes.aspx.cs">
+      <DependentUpon>informaçoes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="informaçoes.aspx.designer.cs">
+      <DependentUpon>informaçoes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intro.aspx.cs">
+      <DependentUpon>Intro.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intro.aspx.designer.cs">
+      <DependentUpon>Intro.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Jogos.aspx.cs">
+      <DependentUpon>Jogos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Jogos.aspx.designer.cs">
+      <DependentUpon>Jogos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Mangas.aspx.cs">
+      <DependentUpon>Mangas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Mangas.aspx.designer.cs">
+      <DependentUpon>Mangas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Musicas.aspx.cs">
+      <DependentUpon>Musicas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Musicas.aspx.designer.cs">
+      <DependentUpon>Musicas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Ova.aspx.cs">
+      <DependentUpon>Ova.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Ova.aspx.designer.cs">
+      <DependentUpon>Ova.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RecuperarSenha.aspx.cs">
+      <DependentUpon>RecuperarSenha.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RecuperarSenha.aspx.designer.cs">
+      <DependentUpon>RecuperarSenha.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sobre.aspx.cs">
+      <DependentUpon>Sobre.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sobre.aspx.designer.cs">
+      <DependentUpon>Sobre.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Todosprodutos.aspx.cs">
+      <DependentUpon>Todosprodutos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Todosprodutos.aspx.designer.cs">
+      <DependentUpon>Todosprodutos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="util\CaptchaControl.aspx.cs">
+      <DependentUpon>CaptchaControl.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Camisas.aspx.cs">
+      <DependentUpon>Camisas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Camisas.aspx.designer.cs">
+      <DependentUpon>Camisas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Conexao\Conectar.cs" />
+    <Compile Include="control\CategoriaDAO.cs" />
+    <Compile Include="control\ProdutoDAO.cs" />
+    <Compile Include="email.aspx.cs">
+      <DependentUpon>email.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="email.aspx.designer.cs">
+      <DependentUpon>email.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="email2.aspx.cs">
+      <DependentUpon>email2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="email2.aspx.designer.cs">
+      <DependentUpon>email2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="erroNull.aspx.cs">
+      <DependentUpon>erroNull.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="erroNull.aspx.designer.cs">
+      <DependentUpon>erroNull.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="menu.aspx.cs">
+      <DependentUpon>menu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="menu.aspx.designer.cs">
+      <DependentUpon>menu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="util\Criptografia.cs" />
+    <Compile Include="Master.Master.cs">
+      <DependentUpon>Master.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master.Master.designer.cs">
+      <DependentUpon>Master.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="bean\UsuarioBean.cs" />
+    <Compile Include="control\UsuarioDAO.cs" />
+    <Compile Include="util\Email.cs" />
+    <Compile Include="util\Erros.cs" />
+    <Compile Include="util\NewsLetter.cs" />
+    <Compile Include="WallPapers.aspx.cs">
+      <DependentUpon>WallPapers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WallPapers.aspx.designer.cs">
+      <DependentUpon>WallPapers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Master.Master" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>21517</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
